@@ -1,0 +1,113 @@
+/* HTML5 */
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video { display: block; }
+mark, rp, rt, ruby, summary, time { display: inline }
+a, img {
+  outline:none;
+  border:none;
+}
+h3 {
+  display:inline-block;
+}
+h1, h2, h3, h4 {
+  font-family: 'Squada One', cursive;
+  font-weight:normal;
+}
+h5 {
+  font-family: 'Spirax', cursive;
+  font-weight:normal;
+}
+
+
+/* Class for clearing floats */
+.clear {clear:both;}
+h1 {
+  font-size:138px;
+  text-transform:uppercase;
+  line-height:110px;
+  text-shadow:3px 3px 5px rgba(0,0,0,0.5);
+}
+h2 {
+  font-size:92px;
+  line-height:90px;
+  text-transform:uppercase;
+  color:#226578;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+h3 {
+  font-size:50px;
+  line-height:40px;
+  text-transform:uppercase;
+  color:#2D7B92;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+h4 {
+  font-size:60px;
+  text-transform:uppercase;
+  line-height:50px;
+  text-shadow:3px 3px 5px rgba(0,0,0,0.5);
+  margin:10px 0px 20px;
+}
+h5 {
+  font-weight: normal;
+  color: #0B5A70;
+  font-size: 46px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
+}
+p {
+  font-size:14px;
+  line-height:19px;
+  margin-top:10px;
+}
+body {margin:0px; background:#145a73;
+  font-family:lucida Grande, helvetica, sans-serif;
+  width:100%;
+  color:#FDFBE4;
+}
+dt {
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+  display:inline-block;
+}
+dd {
+  font-size:16px;
+  font-style: italic;
+  display:inline;
+}
+.wrapper {
+  background:url('img/home_bg.jpg');
+  width:1400px;
+  height:1700px;
+  margin:0px auto;
+}
+.top_content {
+  text-align:center;
+  padding:10px 0px;
+}
+.datetime {
+  text-align:center;
+}
+.judges {
+  margin:10px 0px 20px;
+  display:block;
+}
+.block {
+  margin:20px 0px 40px;
+}
+#eventbrite {
+  background:#226578;
+  text-align:center;
+  width:600px;
+  padding:30px;
+  margin:30px auto 60px;
+  border-radius:4px;
+  box-shadow:0px -1px 1px rgba(0,0,0,0.5);
+  box-shadow:0px 2px 2px rgba(255, 255, 255, 0.8);
+}
