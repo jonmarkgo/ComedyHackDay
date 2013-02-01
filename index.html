@@ -1,177 +1,355 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Comedy Hack Day SF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comedy Hack Day SF">
+    <meta name="author" content="Craig Cannon">
 
-<head>
-<meta charset="utf-8" />
-<title>Comedy Hack Day - Sep 8 & 9 at Pivotal Labs NYC</title>
-<meta property="og:title" content="Comedy Hack Day - Sep 8 & 9 at Pivotal Labs NYC"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="http://www.comedyhackday.com"/>
-<meta property="og:image" content="../img/comhack.png"/>
-<meta property="og:site_name" content="Comedy Hackday"/>
-<meta property="fb:admins" content="10150176510130579"/>
-<meta property="og:description"
-      content="Comedy Hack Day: Make something funny... seriously."/>
+    <meta property="og:title" content="Comedy Hack Day SF"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.comedyhackday.com"/>
+    <meta property="og:image" content="../img/comhack.png"/>
+    <meta property="og:site_name" content="Comedy Hackday"/>
+    <meta property="fb:admins" content="10150176510130579"/>
+    <meta property="og:description"
+          content="Comedy Hack Day SF"/>
 
-<meta name="description" content="Comedy Hack Day: Make something funny... seriously." />
-<meta name="keywords" content="Hackathon, Baratunde, The Onion, NYC, NY Tech Meetup, Hack Day, Comedy Hack Day, Jarod Reyes, Jon Gottfried, Cultivated Wit, Twilio, Craig Cannon" />
-<script type="text/javascript" src="js/mixtape.js">
+    <meta name="keywords" content="Comedy Hack Day, Cultivated Wit, Hackathon, Baratunde, The Onion, SF, Hack Day, Comedy Hack Day, Craig Cannon, Brian Janosch, Twitter" />
 
-</script>
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <style type="text/css">
 
-<!--CSS-->
-<link rel="stylesheet" href="grid.css" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Spirax|Squada+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" />
-<link rel="icon" type="image/png" href="img/favicon.png">
-<style type="text/css">
+      p, h1 {
+        font-family: 'Lato', sans-serif;
+      }
 
-</style>
-<script type="text/javascript">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1348763-14']);
-  _gaq.push(['_setDomainName', 'comedyhackday.org']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
+      .container {
+        padding-right: 100px;
+      }
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
-</script>
-</head>
+      .cw, .chd, .dashes, .date, .twitter, .email-label, .email-form, .what {
+        text-align: center;
+        white-space: nowrap;
+        letter-spacing: 10px;
+      }
+      .cw {
+        font-size: 50px;
+        line-height: 50px;
+      }
+      .cw, .date, .twitter, .what {
+        color: #F7931E;
+      }
 
-<body>
-<div class="wrapper">
+      .chd {
+        font-size: 105px;
+        line-height: 80px;
+      }
+      .chd, .dashes, .email-label, .what-answer {
+        color: #F15A24;
+      }
 
-    <div class="top_content container_12">
-      <img src="img/top_sponsors.png" />
-      <h5>Present</h5>
-      <img src="img/lettering.png" />
-    </div>
-    <div id="container" class="container_12">
-   <br />
-   <iframe src="http://player.vimeo.com/video/54530785?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="900" height="675" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-<br />
-      <div class="datetime">
-        <h1>Sep 8 & 9</h1>
-        <h2>Pivotal Labs</h2>
-        <h3>841 Broadway NY, NY </h3>
+      .comedy {
+        letter-spacing: 26px;
+      }
+
+      .dashes {
+        letter-spacing: 5.7px;
+        font-size: 50px;
+        line-height: 25px;
+        margin-left: -5px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+
+      .sunburst-row {
+        margin-left: -17px;
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      .sunburst {
+        width: 139px;
+      }
+
+      .date {
+        font-size: 80px;
+        line-height: 50px;
+        letter-spacing: 24px;
+      }
+
+      .twitter {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: 25px;
+      }
+
+      .email-label {
+        font-size: 34px;
+        line-height: 34px;
+        letter-spacing: 10px;
+      }
+
+      .what {
+        font-size: 45px;
+        line-height: 34px;
+        letter-spacing: 20px;
+      }
+
+      .what-answer {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        word-spacing: 10px;
+      }
+
+      .emailbar {
+        margin-left: 23%;
+        float: left;
+      }
+
+      .emailbutton {
+        margin-left: -30%;
+      }
+
+      .what-box {
+        width: 550px;
+      }
+
+
+      .sunburst:hover {
+          -webkit-animation-name: rotate;
+          -webkit-animation-duration: 1.5s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-timing-function: linear;
+      }
+      @-webkit-keyframes rotate {
+          from {-webkit-transform: rotate(0deg);}
+          to {-webkit-transform: rotate(360deg);}
+      }
+
+      @media screen and (max-width: 780px){
+
+      .container {
+        max-width: 100%;
+        overflow:hidden;
+      }
+
+
+      .cw, .date, .twitter, .what {
+        -webkit-text-stroke: 1px #F7931E;
+      }
+
+      .chd, .dashes, .email-label, .what-answer {
+        -webkit-text-stroke: 1px #F15A24;
+      }
+
+      .sunburst {
+        width: 80px;
+        margin-left: 0px;
+      }
+      .sunburst-row{
+        margin-left: 0px;
+      }
+      .dashes {
+        letter-spacing: 3px;
+        font-size: 31px;
+        line-height: 20px;
+        margin-left: -8px;
+      }
+      .cw {
+        font-size: 22px;
+        line-height: 15px;
+      }
+      .chd {
+        font-size: 58px;
+        line-height: 45px;
+        letter-spacing: 9px;
+
+      }
+      .comedy {
+        letter-spacing: 19px;
+      }
+
+      .date {
+        font-size: 47px;
+        line-height: 27px;
+        letter-spacing: 17px;
+      }
+      .twitter {
+        font-size: 30px;
+        line-height: 31px;
+        letter-spacing: 16px;
+      }
+      .email-label {
+        font-size: 21px;
+        line-height: 12px;
+        letter-spacing: 7px;
+      }
+      .emailbar {
+        margin-left: 14%;
+      }
+
+      .emailbutton {
+        margin-left: -12%;
+      }
+
+      .what {
+        font-size: 27px;
+        line-height: 20px;
+        letter-spacing: 14px;
+      }
+      .what-answer {
+        font-size: 17px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        word-spacing: 4px;
+      }
+      .what-box {
+        width: 375px;
+      }
+
+      }
+
+    </style>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1348763-14']);
+      _gaq.push(['_setDomainName', 'comedyhackday.org']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+    <div class="container">
+
+      <div class="sunburst-row">
+        <img src="img/sunburst1.png" class="sunburst">
+        <img src="img/sunburst2.png" class="sunburst">
+        <img src="img/sunburst1.png" class="sunburst">
+        <img src="img/sunburst2.png" class="sunburst">
       </div>
 
-      <div class="grid_5">
-<div class="block">
-  <a class="twitter-timeline" href="https://twitter.com/search?q=%23comedyhackday" data-widget-id="244513712411639808">Tweets about "#comedyhackday"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-</div>
-        <!-- ///////////////// Prizes //////////////// -->
-                <div class="block">
-          <h4>What Is It?</h4>
-          <p>Comedy Hack Day is an overnight hackathon bringing comedians and developers together to build hilarious hacks. We believe that comedy can make technology more engaging and technology can make comedy more useful. It's the first Comedy Hack Day ever so we don't know exactly what to expect, but we do know there will be pizza.</p> <br /><br />
-
-          <h4>Schedule</h4>
-          <strong>Friday, Sept. 7</strong>
-          <p>5:30 — Optional Whiskey Friday @ <a href="https://foursquare.com/v/brass-monkey/4101a680f964a5205a0b1fe3" target="_blank">Brass Monkey</a></p><br />
-
-          <strong>Saturday, Sept. 8</strong>
-          <p>9:00 — Breakfast & registration<br />
-          10:00 — Welcome, introductions, rules & prize announcements<br />
-          10:30 — Five minute technology pitches from sponsors<br />
-          11:00 — One minute project pitches from participants <br />
-          12:00 — Team up & start hacking<br />
-          1:00 — Lunch available<br />
-          6:00 — Dinner & evening check in<br />
-          *Note: For any Hackathon virgins, the majority of teams will almost certainly work well into the night, either from home or at the venue (it’ll be open & available all night). So plan accordingly.</p><br />
-
-          <strong>Sunday, Sept. 9</strong>
-          <p>9:00 — Breakfast available<br />
-          1:00 — Lunch available<br />
-          2:30 — Deadline to submit your hack on HackerLeague<br />
-          3:00 — Demos (No more than 3-5 minutes per)<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/events/117315301751056/" target="_blank">Watch the livestream</a><br/>
-          5:00 — Awards & prizes<br />
-          5:30 — Get the hell outta here!</p>
-
-        </div>
-
-        <!-- ///////////////// Directions //////////////// -->
-        <div class="block">
-          <h4>Directions:</h4>
-          <p>Take the <strong>4</strong>, <strong>5</strong>, <strong>6</strong>, <strong>L</strong>, <strong>N</strong>, <strong>Q</strong>, or <strong>R</strong> to the 14 St-Union Square stop. Exit the station and walk south on Broadway - the building is halfway between 14 St and 13 St. Pivotal Labs is on the 8th floor.</p>
-        </div>
-      </div>
-      <div class="grid_7">
-
-        <!-- ///////////////// Judges //////////////// -->
-             <div class="block">
-          <h4>Judges:</h4>
-          <div class="judges">
-            <div class="grid_2"><img src="img/hilary.jpeg" /></div>
-            <div class="grid_4">
-              <p><a href="https://twitter.com/hmason" target="_blank">Hilary Mason</a> is the Chief Scientist at <a href="http://bitly.com/">bitly</a>, co-founder of <a href="http://hackny.org/" target="_blank">HackNY</a>, creator of <a href="http://dataists.com/" target="_blank">dataists</a>, and member of <a href="http://nycresistor.com/" target="_blank">NYCResistor</a>.</p>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-          <div class="judges">
-            <div class="grid_2"><img src="img/anil.jpeg" /></div>
-            <div class="grid_4">
-              <p><a href="https://twitter.com/anildash" target="_blank">Anil Dash</a> is an entrepreneur, writer, and geek living in New York City, obsessed with the ways that technology shapes and transforms culture, media, government and society.</p>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="judges">
-            <div class="grid_2"><img src="img/lizz.jpeg" /></div>
-            <div class="grid_4">
-              <p><a href="https://twitter.com/lizzwinstead" target="_blank">Lizz Winstead</a> is co-creator and former head writer of The Daily Show and Air America Radio co-founder, she is one of the top political satirists in America.</p>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-          <div class="judges">
-            <div class="grid_2"><img src="img/chris.jpg" /></div>
-            <div class="grid_4">
-              <p><a href="https://twitter.com/chrisgethard" target="_blank">Chris Gethard</a> is a writer, actor, and comedian living in New York City. He is a member of the Upright Citizens Brigade Theater and host of <a href="http://thechrisgethardshow.com/" target="_blank">The Chris Gethard Show</a>.</p>
-            </div>
-            <div class="clear"></div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ///////////////// Sponsors //////////////// -->
-        <div class="block">
-          <h4>Sponsors:</h4>
-          <p><strong>If you are interested in sponsoring, please e-mail <a href="organizers@comedyhackday.org">organizers@comedyhackday.org</a> for more details.</strong></p><br />
-          <img style="width:200px;" src="img/logos_downloadable_logobrand.png">&nbsp;<img style="width:200px; background-color:#000;" src="img/UCB_COMEDY_LOGO.jpg"><br/><img style="height:100px; margin-left: 42px;" src="img/MasheryLogo.png">&nbsp;<img style="width:200px; background-color:#FFF; margin-left: 34px; margin-bottom: 26px;" src="img/10gen.png"> <br/><img style="width:200px; background-color:#000;" src="img/sendgrid-logo.png">&nbsp;<img style="width:200px; background-color:#000;" src="img/quotidian.png"><br/><img style="width:200px; background-color:#000;" src="img/tokbox.jpeg">&nbsp;<img style="width:200px; background-color:#000;" src="img/domaincom.jpeg">
-  <br /><br />
-
-          <h4>FAQs</h4>
-          <strong>Q:</strong> "Hi! I'm a comedian. What's a hackathon?"<br />
-          <strong>A:</strong> Please ask the internet before any further questions - <a href="http://en.wikipedia.org/wiki/Hackathon">http://en.wikipedia.org/wiki/Hackathon</a><br /><br />
-          <strong>Q:</strong> "Hi! I'm a developer (or designer) but I'm not very funny--should I attend?"<br />
-          <strong>A:</strong> Yes! We're bringing in comedy folk for just that reason.</a><br /><br />
-          <strong>Q:</strong> "Hi! I'm a media person and I need more clicks on my site. Can I attend and write about Comedy Hack Day?"<br />
-          <strong>A:</strong> Email <a href="mailto:organizers@comedyhackday.org">organizers@comedyhackday.org</a> for one free click on your site.</a><br /><br />
-          <strong>Q:</strong> "Hi! My question wasn't in the FAQ. What do I do?"<br />
-          <strong>A:</strong> Email <a href="mailto:organizers@comedyhackday.org">organizers@comedyhackday.org</a> with your question that somehow didn't fit into our extensive FAQ section.</a><br /><br />
-        </div>
+      <div class="row">
+        <p class="dashes">---------------------------</p>
       </div>
 
-    </div>
-    <div class="clear"></div>
-    <div class="credit">Page hacked together by <a href="https://twitter.com/jreyesdesign" target="blank" >Jarod Reyes</a>. <a href="http://48hourapps.com" target="blank" >Part of 48hourapps</a></div>
+      <div class="row">
+        <p class="cw">CULTIVATED WIT'S</p>
+      </div>
 
-</div>
+      <div class="row">
+        <p class="chd comedy">COMEDY</p>
+      </div>
+
+      <div class="row">
+        <p class="chd">HACK DAY</p>
+      </div>
+
+      <div class="row">
+        <p class="dashes">---------------------------</p>
+      </div>
+
+      <div class="row">
+        <p class="date">APRIL 6+7</p>
+      </div>
+
+      <div class="row">
+        <p class="twitter">@TWITTER SF</p>
+      </div>
+
+      <div class="row">
+        <p class="dashes">---------------------------</p>
+      </div>
 
 
-<!--End HTML-->
 
-</body>
+      <div class="row">
+      <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+        <form action="http://baratunde.us2.list-manage.com/subscribe/post?u=5fe2c35965f2ba5253995ead9&amp;id=e253055f79" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+        <div class="mc-field-group"  >
+          <p class="email-label" >STAY TUNED FOR MORE</p>
+          <center>
+          <input type="email" value="" name="EMAIL" class="required email emailbar" id="mce-EMAIL" placeholder="your email">
+        </center>
+        </div>
+          <div id="mce-responses" class="clear" >
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div class="email-form"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button emailbutton"></div>
+        </form>
+        </div>
+      </div>
+    <!--End mc_embed_signup-->
+      <div class="row">
+        <p class="dashes">---------------------------</p>
+      </div>
+
+      <div class="row">
+        <p class="what">WHAT IS THIS?</p>
+      </div>
+
+      <center>
+      <div class="row what-box" >
+        <p class="what-answer" style="text-align:left;">Comedy Hack Day is an overnight hackathon bringing comedians and developers together to build hilarious hacks. We believe that comedy can make technology more engaging and technology can make comedy more useful. This is dummy text.</p>
+      </div>
+    </center>
+
+      <div class="row">
+        <p class="dashes">---------------------------</p>
+      </div>
+
+      <div class="sunburst-row">
+        <img src="img/sunburst1.png" class="sunburst">
+        <img src="img/sunburst2.png" class="sunburst">
+        <img src="img/sunburst1.png" class="sunburst">
+        <img src="img/sunburst2.png" class="sunburst">
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+
+  </body>
 </html>
