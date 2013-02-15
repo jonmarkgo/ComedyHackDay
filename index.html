@@ -53,7 +53,7 @@
          background: -moz-linear-gradient(top, #f15b24, #f15b24);
          background: -ms-linear-gradient(top, #f15b24, #f15b24);
          background: -o-linear-gradient(top, #f15b24, #f15b24);
-         padding: 5.5px 5px;
+         padding: 5.5px 11px;
          border: 0;
          border-radius: 8px;
          color: white;
@@ -73,7 +73,7 @@
          }
 
 
-      .cw, .chd, .dashes, .date, .twitter, .email-label, .email-form, .what, .email-text {
+      .cw, .chd, .dashes, .date, .twitter, .email-label, .email-form, .what {
         text-align: center;
         white-space: nowrap;
         letter-spacing: 10px;
@@ -90,7 +90,7 @@
         font-size: 105px;
         line-height: 80px;
       }
-      .chd, .dashes, .email-label, .what-answer, .email-text {
+      .chd, .dashes, .email-label, .what-answer {
         color: #F15A24;
       }
 
@@ -108,7 +108,7 @@
       }
 
       .sunburst-row {
-        margin-left: 20px;
+        margin-left: -17px;
         white-space: nowrap;
         text-align: center;
       }
@@ -133,13 +133,7 @@
         font-size: 34px;
         line-height: 34px;
         letter-spacing: 10px;
-        margin-left: 35%;
-      }
-
-      .email-text {
-        font-size: 34px;
-        line-height: 34px;
-        letter-spacing: 10px;
+        margin-left: 0px;
       }
 
       .what {
@@ -153,33 +147,41 @@
         line-height: 20px;
         letter-spacing: 0px;
         word-spacing: 10px;
-        width: 500px;
-        margin-left: 33%;
       }
 
+      .emailbar {
+        margin-left: -20%;
+        float: left;
+        margin-right: -21%;
+      }
 
       .emailbutton {
         margin-left: 1%;
-        margin-top: -2%;
+        margin-top: -3%;
       }
 
       .what-box {
         width: 550px;
       }
 
+      .email-container {
+        width: 300px;
+        margin-bottom: -2%;
+      }
+
+      .email-items {
+        margin-top: 15px;
+        margin-left: 37%;
+      }
 
       .mc-field-group {
-        margin-left:6%;
-        width: 500px;
+        display: inline-block;
+        margin-left: -50%;
       }
 
       .skillset {
         width: 30%;
         margin-left: 7%;
-      }
-
-      form {
-        margin-bottom: 10px;
       }
 
 
@@ -195,17 +197,10 @@
           to {-webkit-transform: rotate(360deg);}
       }
 
-      @media (max-width: 980px){
-      .what-answer {
-        margin-left: 21%;
-      }
-      }
-
       @media (max-width: 780px){
 
       .mc-field-group {
         margin-left: -5%;
-        width: 300px;
       }
 
       .row {
@@ -216,7 +211,7 @@
         -webkit-text-stroke: 1px #F7931E;
       }
 
-      .chd, .dashes, .email-label, .what-answer, .email-text {
+      .chd, .dashes, .email-label, .what-answer {
         -webkit-text-stroke: 1px #F15A24;
       }
 
@@ -229,7 +224,7 @@
         margin-left: 0px;
       }
       .sunburst-row{
-        margin-left: -4%;
+        margin-left: -2%;
       }
       .dashes {
         letter-spacing: 3px;
@@ -273,20 +268,18 @@
 
       }
       .emailbar {
+        margin-left: 2%;
+        width: 80%;
         -webkit-text-stroke: 1px;
       }
 
       .emailbutton {
+        margin-left: -2%;
+        margin-top: 0%;
         -webkit-text-stroke: 1px #FFFFFF;
-        margin-top: 3px;
 
       }
 
-      .email-text {
-        font-size: 102%;
-        line-height: 7px;
-        letter-spacing: 7px;
-      }
 
 
       .email-container {
@@ -312,8 +305,6 @@
         line-height: 18px;
         letter-spacing: 0px;
         word-spacing: 4px;
-        width: 300px;
-        margin-left: 20%;
 
       }
       .what-box {
@@ -333,7 +324,6 @@
 
 
 
-
       .sunburst:hover {
           -webkit-animation-name: rotate;
           -webkit-animation-duration: 1.5s;
@@ -345,12 +335,6 @@
           to {-webkit-transform: rotate(360deg);}
       }
 
-      }
-
-      @media (max-width: 480px){
-      .what-answer {
-        margin-left: 3%;
-      }
       }
 
 
@@ -375,62 +359,61 @@
 
     <div class="container">
 
-      <div class="sunburst-row span12">
+      <div class="sunburst-row">
         <img src="img/sunburst1.png" class="sunburst">
         <img src="img/sunburst2.png" class="sunburst">
         <img src="img/sunburst1.png" class="sunburst">
         <img src="img/sunburst2.png" class="sunburst">
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <p class="dashes">---------------------------</p>
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <p class="cw"><a href="http://www.cultivatedwit.com" target="_blank" class="cw">CULTIVATED WIT'S</a></p>
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <p class="chd comedy">COMEDY</p>
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <p class="chd">HACK DAY</p>
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <p class="dashes">---------------------------</p>
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <p class="date">APRIL 6+7</p>
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <center>
         <a href="https://maps.google.com/maps?hl=en&gl=us&daddr=Suite+900,+1355+Market+St,+San+Francisco,+CA+94103&panel=1&f=d&fb=1&dirflg=d&geocode=0,37.776616,-122.417115&cid=0,0,11063675427825422165&hq=twitter&hnear=0x80859a6d00690021:0x4a501367f076adff,San+Francisco,+CA" target="_blank" class="twitter">@TWITTER SF</a>
-        </center>
+      </center>
       </div>
 
 
 
-      <div class="row span12">
+      <div class="row">
         <p class="dashes">---------------------------</p>
       </div>
 
-      <div class="row span12">
-        <p class="email-text">STAY TUNED FOR MORE</p>
-      </div>
-
+      <center>
+        <div class="row email-container">
         <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup" class="row">
-          <center>
+        <div id="mc_embed_signup">
         <form action="http://cultivatedwit.us2.list-manage1.com/subscribe/post?u=5fe2c35965f2ba5253995ead9&amp;id=e253055f79" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-        <div class="mc-field-group" >
-          <input type="email" value="" name="EMAIL" class="required span2" id="mce-EMAIL" placeholder="Your email" style="margin-right:5px;">
-
-          <select name="SKILLSET" class="required skillset span2" id="mce-SKILLSET" style="margin-right:5px;">
+        <div class="mc-field-group">
+          <p class="email-label"  >STAY TUNED FOR MORE</p>
+          <center class="email-items">
+          <input type="email" value="" name="EMAIL" class="required email emailbar" id="mce-EMAIL" placeholder="Your email">
+          </center>
+          <select name="SKILLSET" class="required skillset" id="mce-SKILLSET">
           <option value="">What are you?</option>
           <option value="Comedian">Comedian</option>
         <option value="Backend Dev">Backend Dev</option>
@@ -438,39 +421,40 @@
         <option value="Designer">Designer</option>
         <option value="Interested Human">Interested Human</option>
           </select>
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button emailbutton span2">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button emailbutton">
           </div>
           <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>
           </div>
         </form>
-      </center>
         </div>
           <!--End mc_embed_signup-->
+        </div>
+      </center>
 
-
-
-
-      <div class="row span12">
+      <div class="row">
         <p class="dashes">---------------------------</p>
       </div>
 
-      <div class="row span12">
+      <div class="row">
         <p class="what">WHAT IS THIS?</p>
       </div>
 
+      <center>
+      <div class="row what-box" >
+        <p class="what-answer" style="text-align:left;">Comedy Hack Day is an overnight hackathon that brings together comedians and developers. We held <a href="http://cultivatedwit.tumblr.com/post/31404347864/comedy-hack-day-wrap-up-comedyhackday" target="_blank">the first one</a> in NYC last September. Read Fast Company's review <a href="http://www.fastcocreate.com/1681584/from-scatroulette-to-fitbitch-developers-and-comics-collide-on-comedy-hack-day#1" target="_blank">here</a>. If you're interested in sponsoring the event or just want to know more, <a href="mailto:answeringmachine@cultivatedwit.com?subject=Comedy Hack Day">email us</a>.
 
-      <div class="row" >
-        <p class="what-answer span12" style="text-align:left;">Comedy Hack Day is an overnight hackathon that brings together comedians and developers. We held <a href="http://cultivatedwit.tumblr.com/post/31404347864/comedy-hack-day-wrap-up-comedyhackday" target="_blank">the first one</a> in NYC last September. Read Fast Company's review <a href="http://www.fastcocreate.com/1681584/from-scatroulette-to-fitbitch-developers-and-comics-collide-on-comedy-hack-day#1" target="_blank">here</a>. If you're interested in sponsoring the event or just want to know more, <a href="mailto:answeringmachine@cultivatedwit.com?subject=Comedy Hack Day">email us</a>.</p>
+
+      </p>
       </div>
+    </center>
 
-
-      <div class="row span12">
+      <div class="row">
         <p class="dashes">---------------------------</p>
       </div>
 
-      <div class="sunburst-row span12">
+      <div class="sunburst-row">
         <img src="img/sunburst1.png" class="sunburst">
         <img src="img/sunburst2.png" class="sunburst">
         <img src="img/sunburst1.png" class="sunburst">
