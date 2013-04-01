@@ -1,6 +1,6 @@
 body
 {
-  background-color: #333333;
+
 }
 
 p, h1, .button, a, .skillset {
@@ -12,66 +12,7 @@ a.twitter:hover, a.cw:hover {
   color: #3399CC;
 }
 
-img.cwlogo {
-  margin-left: -8px;
-  margin-top: -5px;
-  margin-bottom: 5px;
-  width: 583px;
-  height: auto;
-}
 
-img.mclogo {
-   margin-left: -27px;
-   margin-top: -40px;
-   margin-bottom: -40px;
-   width: 640px;
-   height:auto;
-}
-
-img.fodlogo {
-   margin-left: -15px;
-   width: 550px;
-   height:auto;
-}
-
-img.apilogo {
-   margin-left: -5px;
-   margin-right: 5px;
-   margin-top: 10px;
-   width: 275px;
-   height:auto;
-}
-
-img.soundcloud {
-  margin-right: 25px;
-  margin-left: -30px;
-}
-
-img.mashery {
-  width: 225px;
-  margin-left: 0px;
-}
-
-
-img.headshot {
-  width: 150px;
-  height: auto;
-  margin-left: -55px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-span.judgebio {
-  display: block;
-  margin-left:130px;
-  margin-top:15px;
-  margin-right: 50px;
-  line-height: 18pt;
-}
-
-span.judgename {
-  font-size: 25pt;
-}
 
 a:hover {
   text-decoration: none;
@@ -111,7 +52,7 @@ body {
    }
 
 
-.cw, .chd, .dashes, .date, .twitter, .email-label, .email-form, .what, .signup, .sponsoredby {
+.cw, .chd, .dashes, .date, .twitter, .email-label, .email-form, .what, .signup {
   text-align: center;
   white-space: nowrap;
   letter-spacing: 10px;
@@ -128,7 +69,7 @@ body {
   font-size: 105px;
   line-height: 80px;
 }
-.chd, .dashes, .email-label, .what-answer, .mod, .sponsoredby{
+.chd, .dashes, .email-label, .what-answer, .mod{
   color: #F15A24;
 }
 
@@ -171,12 +112,6 @@ body {
   font-size: 50px;
   line-height: 50px;
   letter-spacing: 22px;
-}
-
-.sponsoredby {
-  font-size: 38px;
-  line-height: 50px;
-  letter-spacing: 25px;
 }
 
 .email-label {
@@ -271,47 +206,6 @@ form {
 
 @media (max-width: 780px) {
 
-span.judgebio {
-  margin-left:130px;
-  margin-top:10px;
-  margin-right: 30px;
-  line-height: 10pt;
-}
-
-span.judgename {
-  font-size: 15pt;
-}
-
-img.cwlogo {
-  margin-left: -8px;
-  margin-top: -5px;
-  margin-bottom: 5px;
-  width: 300px;
-  height: auto;
-}
-
-img.mclogo {
-   margin-left: -27px;
-   margin-top: -20px;
-   margin-bottom: -20px;
-   width: 340px;
-   height:auto;
-}
-
-img.fodlogo {
-   margin-left: -15px;
-   width: 300px;
-   height:auto;
-}
-
-img.headshot {
-  width: 100px;
-  height: auto;
-  margin-top: 3px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
 .mc-field-group {
   margin-left: -5%;
   width: 300px;
@@ -325,7 +219,7 @@ img.headshot {
   -webkit-text-stroke: 1px #F7931E;
 }
 
-.chd, .dashes, .email-label, .what-answer, .email-text, .signup, .sponsoredby {
+.chd, .dashes, .email-label, .what-answer, .email-text, .signup {
   -webkit-text-stroke: 1px #F15A24;
 }
 
@@ -352,21 +246,12 @@ a.twitter:hover, a.cw:hover {
   margin-left: 0%;
 }
 .chd {
-  font-size: 330%;
+  font-size: 300%;
   line-height: 80%;
   letter-spacing: 9px;
-  margin-left: -1%;
+  margin-left: 0%;
 
 }
-
-.sponsoredby {
-  font-size: 190%;
-  line-height: 80%;
-  letter-spacing: 9px;
-  margin-left: -1%;
-
-}
-
 .comedy {
   letter-spacing: 19px;
 }
@@ -487,6 +372,5 @@ a.hover {
   width: 300px;
   height: auto;
   margin-left: -5%;
-  margin-top: 1%;
 }
 }
