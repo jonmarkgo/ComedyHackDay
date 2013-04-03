@@ -35,23 +35,45 @@ img.fodlogo {
 }
 
 img.apilogo {
-   margin-left: -5px;
-   margin-right: 5px;
-   margin-top: 10px;
+   margin-left: 20px;
+   margin-right: 30px;
+   margin-top: 40px;
    width: 275px;
    height:auto;
 }
 
 img.soundcloud {
   margin-right: 25px;
-  margin-left: -30px;
+  width: 225px;
 }
 
 img.mashery {
-  width: 225px;
-  margin-left: 0px;
+  width: 200px;
+  margin-left: 80px;
 }
 
+img.rdio {
+  width: 225px;
+  margin-left: 40px;
+}
+
+img.tokbox {
+  margin-left: 10px;
+}
+
+img.bowens {
+  width: 225px;
+  margin-left: 35px;
+}
+
+img.tapestry {
+  width: 225px;
+  margin-left: 70px;
+}
+
+img.tengen {
+  margin-left: 35px;
+}
 
 img.headshot {
   width: 150px;
@@ -307,7 +329,7 @@ img.fodlogo {
 img.apilogo {
    margin-left: -5px;
    margin-right: 5px;
-   margin-top: 10px;
+   margin-top: 20px;
    width: 125px;
    height:auto;
 }
@@ -319,7 +341,33 @@ img.soundcloud {
 
 img.mashery {
   width: 100px;
-  margin-left: -25px;
+  margin-left: -15px;
+}
+
+img.rdio {
+  width: 100px;
+  margin-left: 20px;
+}
+
+img.tokbox {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+img.bowens {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img.tapestry {
+  width: 100px;
+  margin-left: 30px;
+}
+
+img.tengen {
+  margin-left: 5px;
+  margin-right: 30px;
 }
 
 
