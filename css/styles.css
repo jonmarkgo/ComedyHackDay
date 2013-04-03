@@ -73,6 +73,11 @@ img.tapestry {
 
 img.tengen {
   margin-left: 35px;
+  margin-top: 15px;
+}
+
+img.github {
+  margin-top: 15px;
 }
 
 img.headshot {
@@ -220,8 +225,6 @@ body {
   letter-spacing: 10px;
 }
 
-
-
 .what {
   font-size: 45px;
   line-height: 34px;
@@ -368,8 +371,12 @@ img.tapestry {
 img.tengen {
   margin-left: 0px;
   margin-right: 20px;
+  margin-top: 7px;
 }
 
+img.github {
+  margin-top: 7px;
+}
 
 img.headshot {
   width: 100px;
