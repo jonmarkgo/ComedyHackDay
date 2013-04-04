@@ -45,11 +45,13 @@ img.apilogo {
 img.soundcloud {
   margin-right: 25px;
   width: 225px;
+  margin-top: 15px;
 }
 
 img.mashery {
   width: 200px;
   margin-left: 80px;
+  margin-top: 15px;
 }
 
 img.rdio {
@@ -63,21 +65,20 @@ img.tokbox {
 
 img.bowens {
   width: 225px;
-  margin-left: 35px;
+  margin-left: 70px;
 }
 
 img.tapestry {
   width: 225px;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 img.tengen {
-  margin-left: 45px;
-  margin-top: 15px;
+  margin-left: 10px;
 }
 
 img.github {
-  margin-top: 15px;
+  margin-left: 30px;
 }
 
 img.headshot {
@@ -340,11 +341,13 @@ img.apilogo {
 img.soundcloud {
   margin-right: 45px;
   margin-left: -10px;
+  margin-top: 7px;
 }
 
 img.mashery {
   width: 100px;
   margin-left: -15px;
+  margin-top: 7px;
 }
 
 img.rdio {
@@ -359,23 +362,22 @@ img.tokbox {
 
 img.bowens {
   width: 100px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
 }
 
 img.tapestry {
   width: 100px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 img.tengen {
   margin-left: 0px;
   margin-right: 20px;
-  margin-top: 7px;
 }
 
 img.github {
-  margin-top: 7px;
+  margin-left: 15px;
 }
 
 img.headshot {
