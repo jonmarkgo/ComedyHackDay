@@ -31,6 +31,8 @@ img.mclogo {
 img.fodlogo {
    margin-left: -15px;
    width: 550px;
+   margin-top: 15px;
+   margin-bottom: 5px;
    height:auto;
 }
 
@@ -332,6 +334,8 @@ img.mclogo {
 img.fodlogo {
    margin-left: -15px;
    width: 300px;
+   margin-top: 5px;
+   margin-bottom: 5px;
    height:auto;
 }
 
