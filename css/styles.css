@@ -155,7 +155,7 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
-.cw, .date, .twitter, .what, .prize {
+.cw, .date, .twitter, .what, .prize, .judgename, .title {
   color: #F7931E;
 }
 
@@ -415,7 +415,7 @@ img.headshot {
   margin-left: -2%;
 }
 
-.cw, .date, .twitter, .what, .prize {
+.cw, .date, .twitter, .what, .prize, .judgename, .title {
   -webkit-text-stroke: 1px #F7931E;
 }
 
