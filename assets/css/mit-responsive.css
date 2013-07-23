@@ -1,0 +1,19 @@
+/*!
+ *
+ * Custom CSS for Comedy Hack Day at the MIT Media Lab
+ *
+ * @CraigCannon
+ *
+ */
+
+@media (max-width: 979px) {
+	.triangle-top  {
+		margin-top: -60px;
+	}
+}
+
+@media (max-width: 767px) {
+	.yellow-break {
+		height: 5px;
+	}
+}

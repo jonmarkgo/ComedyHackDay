@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Comedy Hack Day at the MIT Media Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comedy Hack Day at the MIT Media Lab. September 21-22, 2013">
+    <meta name="author" content="Craig Cannon">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/mit.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/mit-responsive.css" rel="stylesheet">
+    <style type="text/css">
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+    <div class="triangle triangle-top" id="triangle-topleft"></div>
+    <div class="triangle triangle-top" id="triangle-topright"></div>
+    <div class="triangle triangle-top triangle-top2" id="triangle-topleft2"></div>
+    <div class="triangle triangle-top triangle-top2" id="triangle-topright2"></div>
+
+    <div class="chd-container">
+
+      <div class="jumbotron">
+        <img src="assets/img/Cultivated_Wit.png" class="logo">
+        <img src="assets/img/CHD_logo.png" class="logo chd-logo">
+      </div>
+
+      <span class="yellow-break"></span>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var windowWidth = $(window).width();
+        $(".triangle-top").css({"border-top": windowWidth/2 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $(".triangle-top2").css({"border-top": windowWidth/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $("#triangle-topleft").css({"border-right": windowWidth/1.5 + 'px solid transparent'} );
+        $("#triangle-topright").css({"border-left": windowWidth/1.5 + 'px solid transparent'} );
+        $("#triangle-topleft2").css({"border-right": windowWidth/1.3 + 'px solid transparent'} );
+        $("#triangle-topright2").css({"border-left": windowWidth/1.3 + 'px solid transparent'} );
+      });
+    </script>
+    <script type="text/javascript">
+      $(window).resize(function () {
+        var windowWidthR = $(window).width();
+        $(".triangle-top").css({"border-top": windowWidthR/2 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $(".triangle-top2").css({"border-top": windowWidthR/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $("#triangle-topleft").css({"border-right": windowWidthR/1.5 + 'px solid transparent'} );
+        $("#triangle-topright").css({"border-left": windowWidthR/1.5 + 'px solid transparent'} );
+        $("#triangle-topleft2").css({"border-right": windowWidthR/1.3 + 'px solid transparent'} );
+        $("#triangle-topright2").css({"border-left": windowWidthR/1.3 + 'px solid transparent'} );
+      });
+    </script>
+
+  </body>
+</html>
