@@ -9,8 +9,16 @@
 @media (max-width: 979px) {
 	.triangle-top  {
 		margin-top: -60px;
-		margin-left: -60px;
 	}
+
+	#triangle-topleft {
+		margin-left: -20px;
+	}
+
+	#triangle-topleft2 {
+		margin-left: -20px;
+	}
+
 }
 
 @media (max-width: 767px) {
