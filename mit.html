@@ -35,10 +35,11 @@
   </head>
 
   <body>
-    <div class="triangle triangle-top" id="triangle-topleft"></div>
-    <div class="triangle triangle-top" id="triangle-topright"></div>
-    <div class="triangle triangle-top triangle-top2" id="triangle-topleft2"></div>
-    <div class="triangle triangle-top triangle-top2" id="triangle-topright2"></div>
+
+    <div class="triangle triangle-top triangle-left1"></div>
+    <div class="triangle triangle-top triangle-right1"></div>
+    <div class="triangle triangle-top triangle-top2 triangle-left2"></div>
+    <div class="triangle triangle-top triangle-top2 triangle-right2"></div>
 
     <div class="chd-container">
 
@@ -75,7 +76,90 @@
 
       <hr>
 
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <hr>
+
     </div> <!-- /container -->
+
+    <div class="triangle triangle-bottom triangle-left1"></div>
+    <div class="triangle triangle-bottom triangle-right1"></div>
+    <div class="triangle triangle-bottom triangle-bottom2 triangle-left2"></div>
+    <div class="triangle triangle-bottom triangle-bottom2 triangle-right2"></div>
 
     <!-- Le javascript
     ================================================== -->
@@ -86,10 +170,12 @@
         var windowWidth = $(window).width();
         $(".triangle-top").css({"border-top": windowWidth/2 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
         $(".triangle-top2").css({"border-top": windowWidth/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
-        $("#triangle-topleft").css({"border-right": windowWidth/1.5 + 'px solid transparent'} );
-        $("#triangle-topright").css({"border-left": windowWidth/1.5 + 'px solid transparent'} );
-        $("#triangle-topleft2").css({"border-right": windowWidth/1.3 + 'px solid transparent'} );
-        $("#triangle-topright2").css({"border-left": windowWidth/1.3 + 'px solid transparent'} );
+        $(".triangle-bottom").css({"border-bottom": windowWidth/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $(".triangle-bottom2").css({"border-bottom": windowWidth/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $(".triangle-left1").css({"border-right": windowWidth/1.5 + 'px solid transparent'} );
+        $(".triangle-right1").css({"border-left": windowWidth/1.5 + 'px solid transparent'} );
+        $(".triangle-left2").css({"border-right": windowWidth/1.3 + 'px solid transparent'} );
+        $(".triangle-right2").css({"border-left": windowWidth/1.3 + 'px solid transparent'} );
       });
     </script>
     <script type="text/javascript">
@@ -97,10 +183,12 @@
         var windowWidthR = $(window).width();
         $(".triangle-top").css({"border-top": windowWidthR/2 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
         $(".triangle-top2").css({"border-top": windowWidthR/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
-        $("#triangle-topleft").css({"border-right": windowWidthR/1.5 + 'px solid transparent'} );
-        $("#triangle-topright").css({"border-left": windowWidthR/1.5 + 'px solid transparent'} );
-        $("#triangle-topleft2").css({"border-right": windowWidthR/1.3 + 'px solid transparent'} );
-        $("#triangle-topright2").css({"border-left": windowWidthR/1.3 + 'px solid transparent'} );
+        $(".triangle-bottom").css({"border-bottom": windowWidthR/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $(".triangle-bottom2").css({"border-bottom": windowWidthR/1.7 + 'px solid rgba(255%, 204%, 0%, 0.3)'} );
+        $(".triangle-left1").css({"border-right": windowWidthR/1.5 + 'px solid transparent'} );
+        $(".triangle-right1").css({"border-left": windowWidthR/1.5 + 'px solid transparent'} );
+        $(".triangle-left2").css({"border-right": windowWidthR/1.3 + 'px solid transparent'} );
+        $(".triangle-right2").css({"border-left": windowWidthR/1.3 + 'px solid transparent'} );
       });
     </script>
 

@@ -72,24 +72,32 @@ body {
 	border-top: 600px solid rgba(255%, 204%, 0%, 0.3);;
 }
 
+.triangle-bottom {
+	border-bottom: 600px solid rgba(255%, 204%, 0%, 0.3);;
+}
+
 .triangle-top2 {
 	border-top: 600px solid rgba(255%, 204%, 0%, 0.3);;
 }
 
-#triangle-topleft {
+.triangle-bottom2 {
+	border-bottom: 600px solid rgba(255%, 204%, 0%, 0.3);;
+}
+
+.triangle-left1 {
 	border-right: 1000px solid transparent;	
 }
 
-#triangle-topright {
+.triangle-right1 {
 	border-left: 1000px solid transparent;
-	right:0px;	
+	right: 0px;
 }
 
-#triangle-topleft2 {
+.triangle-left2 {
 	border-right: 1000px solid transparent;	
 }
 
-#triangle-topright2 {
+.triangle-right2 {
 	border-left: 1000px solid transparent;
-	right:0px;	
+	right: 0px;	
 }
