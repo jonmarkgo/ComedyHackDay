@@ -61,7 +61,12 @@
 	h3 {
 		font-size: 35px;
 	}
+
 	.videoWrapper {
-	margin: -5px 5px 25px 5px;
+		overflow: hidden;
+	}
+
+	.videoWrapper iframe {
+		left: -8%;
 	}
 }
