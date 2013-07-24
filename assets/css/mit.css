@@ -356,6 +356,9 @@ input[type="submit"] {
 	border-image-repeat: initial;
 	background-color: rgba(51, 153, 255, 1);
 	box-sizing: border-box;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 }
 
 input[type="submit"]:focus {
