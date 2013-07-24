@@ -27,11 +27,62 @@
 	url('../../assets/fonts/Josefin_Slab_Regular/josefinslab-regular-webfont.ttf') format('truetype');
 }
 
-body {
+body, p {
 	padding-top: 20px;
 	padding-bottom: 40px;
-	font-family: 'Josefin Slab Regular', sans-serif;
+	font-family: 'Josefin Slab Regular', "Times New Roman", Times, serif;
+	color: rgba(51, 102, 255, 1);
+	margin: 5px 0 5px 0;
 }
+
+h2,
+h3,
+h4 {
+	font-family: 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
+	color: rgba(51, 153, 255, 1);
+	margin: 15px 0 0px 0;
+}
+
+p {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+h2 {
+	font-size: 55px;
+	line-height: 60px;
+}
+
+h3 {
+	font-size: 45px;
+}
+
+h4 {
+	font-size: 35px;
+}
+
+a {
+	color: rgba(51, 153, 255, 1);
+	text-decoration: none;
+}
+
+a:link {
+	color:rgba(51, 153, 255, 1);
+	text-decoration: none;
+}    /* unvisited link */
+a:visited {
+	color:rgba(51, 153, 255, 1);
+	text-decoration: none;
+} /* visited link */
+a:hover {
+	color:rgba(51, 153, 255, 1);
+	text-decoration: none;
+}   /* mouse over link */
+a:active {
+	text-decoration: none;
+	color:rgba(51, 153, 255, 1);
+}  /* selected link */
+
 
 /* Custom container */
 .chd-container {
@@ -55,9 +106,10 @@ body {
 }
 
 .yellow-break {
-	background-color: rgba(255%, 204%, 0%, 0.3);
+	background-color: rgba(255, 255, 0, 0.3);
 	height: 10px;
 	width: 100%;
+	margin: 15px 0 15px 0;
 }
 
 .triangle {
@@ -69,19 +121,19 @@ body {
 
 .triangle-top {
 	margin-top: -20px;
-	border-top: 600px solid rgba(255%, 204%, 0%, 0.3);;
+	border-top: 600px solid rgba(255, 255, 0, 0.3);;
 }
 
 .triangle-bottom {
-	border-bottom: 600px solid rgba(255%, 204%, 0%, 0.3);;
+	border-bottom: 600px solid rgba(255, 255, 0, 0.3);;
 }
 
 .triangle-top2 {
-	border-top: 600px solid rgba(255%, 204%, 0%, 0.3);;
+	border-top: 600px solid rgba(255, 255, 0, 0.3);;
 }
 
 .triangle-bottom2 {
-	border-bottom: 600px solid rgba(255%, 204%, 0%, 0.3);;
+	border-bottom: 600px solid rgba(255, 255, 0, 0.3);;
 }
 
 .triangle-left1 {
@@ -100,4 +152,51 @@ body {
 .triangle-right2 {
 	border-left: 1000px solid transparent;
 	right: 0px;	
+}
+
+#sponsored {
+	text-align: center;
+}
+
+.light-blue {
+	color: rgba(51, 153, 255, 1);
+}
+
+.dark-blue {
+	color: rgba(51, 102, 255, 1);
+}
+
+#mc-logo {
+	width: 70%;
+	height: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.row {
+	margin-left: 0 !important;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin: -5px 0 25px 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.nothing-button {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

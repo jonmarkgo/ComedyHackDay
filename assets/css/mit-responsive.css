@@ -18,10 +18,41 @@
 	.triangle-left2 {
 		margin-left: -20px;
 	}
+
+	h3 {
+		margin: 15px 0 15px 0;
+	}
+
+	#mc-logo {
+		width: 75%;
+	    margin-top: 20px;
+	    margin-bottom: 5px;
+	}
 }
 
 @media (max-width: 767px) {
 	.yellow-break {
 		height: 5px;
+		margin: 5px 0 5px 0;
+	}
+
+	.jumbotron {
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 45px;
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 480px) {
+	h2 {
+		font-size: 35px;
+		line-height: 40px;
+	}
+
+	h3 {
+		font-size: 35px;
 	}
 }
