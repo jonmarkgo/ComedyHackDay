@@ -313,8 +313,17 @@ input[type="submit"].btn.btn-mini {
   *padding-bottom: 1px;
 }
 
-input[type="1submit"] {
+
+input[type="submit"] {
 	cursor: pointer;
+	border: none;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(51, 102, 255, 1);
+	padding: 2px 0 0 0;
+	margin: 0 15px 10px 0;
+	font-size: 25px;
+	line-height: 40px;
+	/* add */
 	-webkit-writing-mode: horizontal-tb;
 	margin: 0em;
 	font: -webkit-small-control;
@@ -327,7 +336,6 @@ input[type="1submit"] {
 	display: inline-block;
 	text-align: start;
 	-webkit-appearance: textfield;
-	padding: 1px;
 	background-color: black;
 	border: 2px inset;
 	border-image-source: initial;
@@ -344,7 +352,6 @@ input[type="1submit"] {
 	text-align: center;
 	cursor: default;
 	color: buttontext;
-	padding: 2px 6px 3px;
 	border: 2px outset buttonface;
 	border-image-source: initial;
 	border-image-slice: initial;
@@ -353,17 +360,6 @@ input[type="1submit"] {
 	border-image-repeat: initial;
 	background-color: buttonface;
 	box-sizing: border-box;
-}
-
-input[type="submit"] {
-	cursor: pointer;
-	border: none;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(51, 102, 255, 1);
-	padding: 2px 0 0 0;
-	margin: 0 15px 10px 0;
-	font-size: 25px;
-	line-height: 40px;
 }
 
 input[type="submit"]:focus {
