@@ -325,7 +325,6 @@ input[type="submit"] {
 	line-height: 40px;
 	/* add */
 	-webkit-writing-mode: horizontal-tb;
-	font: -webkit-small-control;
 	color: initial;
 	letter-spacing: normal;
 	word-spacing: normal;
@@ -361,12 +360,18 @@ input[type="submit"] {
 	border-radius: 0px;
 }
 
-input[type="submit"]:focus {
-	outline: rgba(51, 102, 255, .5) auto 5px;
+
+
+input[type="submit"]:link {
+	background-color: rgba(51, 153, 255, 1);
 }
 
 input[type="submit"]:active {
-	background-color: rgba(51, 153, 255, 1);
+	background-color: rgba(51, 102, 255, 1);
+}
+
+input[type="submit"]:focus {
+	outline: rgba(51, 102, 255, .5) auto 5px;
 }
 
 .email-button {
