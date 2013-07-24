@@ -31,6 +31,7 @@
 	h2,
 	h3,
 	h4 {
+		font-family: 'Quicksand', 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
 		font-weight: normal;
 	}
 }
