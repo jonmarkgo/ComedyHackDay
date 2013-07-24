@@ -70,28 +70,25 @@ h4 {
 	font-size: 35px;
 }
 
-a {
-	color: rgba(51, 153, 255, 1);
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
 	text-decoration: none;
+	word-wrap: break-word;
 }
 
-a:link {
-	color:rgba(51, 153, 255, 1);
-	text-decoration: none;
-}    /* unvisited link */
-a:visited {
-	color:rgba(51, 153, 255, 1);
-	text-decoration: none;
-} /* visited link */
-a:hover {
-	color:rgba(51, 153, 255, 1);
-	text-decoration: none;
-}   /* mouse over link */
+a,
+a:link,
+a:visited,
 a:active {
-	text-decoration: none;
-	color:rgba(51, 153, 255, 1);
-}  /* selected link */
+	color: rgba(51, 153, 255, 1);
+}
 
+a:hover {
+	color:rgba(51, 102, 255, 1);
+}  
 
 /* Custom container */
 .chd-container {
