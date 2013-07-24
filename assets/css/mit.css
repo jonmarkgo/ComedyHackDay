@@ -47,9 +47,10 @@ body, p {
 h2,
 h3,
 h4 {
-	font-family: 'Quicksand Bold', 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
+	font-family: 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
 	color: rgba(51, 153, 255, 1);
 	margin: 15px 0 0px 0;
+	font-weight: 600;
 }
 
 p {
