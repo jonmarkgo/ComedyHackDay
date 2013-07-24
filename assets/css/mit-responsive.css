@@ -18,20 +18,10 @@
 	.triangle-left2 {
 		margin-left: -20px;
 	}
-
 }
 
 @media (max-width: 767px) {
 	.yellow-break {
 		height: 5px;
 	}
-	
-	.bump {
-		margin-top: -3%;
-	}
-
-	.logobump {
-		margin-top: 6%;
-	}
-
 }
