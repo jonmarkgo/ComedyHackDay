@@ -21,11 +21,20 @@
 }
 
 @font-face {
+	font-family: 'Quicksand Bold';
+	src: url('../../assets/fonts/Quicksand_Bold/quicksand-bold-webfont.eot?') format('etf'), 
+	url('../../assets/fonts/Quicksand_Bold/quicksand-bold-webfont.woff') format('woff'), 
+	url('../../assets/fonts/Quicksand_Bold/quicksand-bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'Josefin Slab Regular';
 	src: url('../../assets/fonts/Josefin_Slab_Regular/josefinslab-regular-webfont.eot?') format('etf'), 
 	url('../../assets/fonts/Josefin_Slab_Regular/josefinslab-regular-webfont.woff') format('woff'), 
 	url('../../assets/fonts/Josefin_Slab_Regular/josefinslab-regular-webfont.ttf') format('truetype');
 }
+
+
 
 body, p {
 	padding-top: 20px;
@@ -38,10 +47,9 @@ body, p {
 h2,
 h3,
 h4 {
-	font-family: 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
+	font-family: 'Quicksand Bold', 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
 	color: rgba(51, 153, 255, 1);
 	margin: 15px 0 0px 0;
-	font-weight: 700;
 }
 
 p {
