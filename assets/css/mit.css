@@ -325,7 +325,6 @@ input[type="submit"] {
 	line-height: 40px;
 	/* add */
 	-webkit-writing-mode: horizontal-tb;
-	margin: 0em;
 	font: -webkit-small-control;
 	color: initial;
 	letter-spacing: normal;
@@ -336,8 +335,6 @@ input[type="submit"] {
 	display: inline-block;
 	text-align: start;
 	-webkit-appearance: textfield;
-	background-color: black;
-	border: 2px inset;
 	border-image-source: initial;
 	border-image-slice: initial;
 	border-image-width: initial;
@@ -346,19 +343,18 @@ input[type="submit"] {
 	-webkit-rtl-ordering: logical;
 	-webkit-user-select: text;
 	cursor: auto;
-	-webkit-appearance: push-button;
+	-webkit-appearance: none;
 	white-space: pre;
 	-webkit-align-items: flex-start;
 	text-align: center;
 	cursor: default;
-	color: buttontext;
-	border: 2px outset buttonface;
+	color: rgba(255, 255, 255, 1);
 	border-image-source: initial;
 	border-image-slice: initial;
 	border-image-width: initial;
 	border-image-outset: initial;
 	border-image-repeat: initial;
-	background-color: buttonface;
+	background-color: rgba(51, 153, 255, 1);
 	box-sizing: border-box;
 }
 
