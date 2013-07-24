@@ -360,7 +360,7 @@ input[type="submit"] {
 	border: none;
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(51, 102, 255, 1);
-	padding: 0 0 0 0;
+	padding: 2px 0 0 0;
 	margin: 0 15px 10px 0;
 	font-size: 25px;
 	line-height: 40px;
