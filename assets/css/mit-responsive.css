@@ -19,10 +19,6 @@
 		margin-left: -20px;
 	}
 
-	h3 {
-		margin: 15px 0 15px 0;
-	}
-
 	#mc-logo {
 		width: 75%;
 	    margin-top: 20px;
@@ -46,22 +42,26 @@
 		margin-bottom: 20px;
 	}
 
-	h2 {
-		font-size: 45px;
-		line-height: 50px;
+	h3 {
+		margin: 15px 0 15px 0;
+		font-size: 30px;
 	}
+
+	h2 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 25px;
+		padding-top: 10px;
+	}
+
+
 }
 
 @media (max-width: 480px) {
-	h2 {
-		font-size: 35px;
-		line-height: 40px;
-	}
-
-	h3 {
-		font-size: 35px;
-	}
-
 	.videoWrapper {
 		overflow: hidden;
 	}
