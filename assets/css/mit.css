@@ -42,8 +42,7 @@ input[type="email"],
 input[type="submit"] {
 	padding-top: 20px;
 	padding-bottom: 40px;
-	font-family: 'Josefin Slab Regular', "Times New Roman", Times, serif;
-	color: rgba(51, 102, 255, 1);
+	font-family: 'adelle', 'Josefin Slab Regular', Times, serif;
 	margin: 5px 0 5px 0;
 }
 
@@ -51,7 +50,6 @@ h2,
 h3,
 h4 {
 	font-family: 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
-	color: rgba(51, 153, 255, 1);
 	margin: 15px 0 0 0;
 }
 
@@ -83,17 +81,6 @@ a:hover {
 	word-wrap: break-word;
 }
 
-a,
-a:link,
-a:visited,
-a:active {
-	color: rgba(51, 153, 255, 1);
-}
-
-a:hover {
-	color:rgba(51, 102, 255, 1);
-}  
-
 /* Custom container */
 .chd-container {
 	margin: 0 auto;
@@ -115,8 +102,7 @@ a:hover {
 	margin-top: 5%;
 }
 
-.yellow-break {
-	background-color: rgba(255, 255, 0, 0.3);
+.linebreak {
 	height: 10px;
 	width: 100%;
 	margin: 15px 0 0 0;
@@ -131,19 +117,15 @@ a:hover {
 
 .triangle-top {
 	margin-top: -25px;
-	border-top: 600px solid rgba(255, 255, 0, 0.3);;
+	border-top: 600px solid rgba(255, 255, 0, 0.3);
 }
 
 .triangle-bottom {
-	border-bottom: 600px solid rgba(255, 255, 0, 0.3);;
+	border-bottom: 600px solid rgba(255, 255, 0, 0.3);
 }
 
 .triangle-top2 {
-	border-top: 600px solid rgba(255, 255, 0, 0.3);;
-}
-
-.triangle-bottom2 {
-	border-bottom: 600px solid rgba(255, 255, 0, 0.3);;
+	border-top: 600px solid rgba(255, 255, 0, 0.3);
 }
 
 .triangle-left1 {
@@ -168,12 +150,35 @@ a:hover {
 	text-align: center;
 }
 
-.light-blue {
-	color: rgba(51, 153, 255, 1);
+p,
+input[type="email"],
+input[type="submit"],
+a:hover,
+.dark {
+	color: rgba(255, 102, 0, 1);
 }
 
-.dark-blue {
-	color: rgba(51, 102, 255, 1);
+h2,
+h3,
+h4,
+a,
+a:link,
+a:visited,
+a:active,
+.light {
+	color: rgba(255, 153, 0, 1);
+}
+
+/* This was causing errors on the above style */
+input[type="email"]:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
+input[type="email"]::-moz-placeholder, /* Mozilla Firefox 19+ */
+input[type="email"]:-ms-input-placeholder /* Internet Explorer 10+ */ {
+	color: rgba(255, 153, 0, 1);
+} 
+
+.linebreak,
+.triangle-color {
+	background-color: rgba(255, 255, 0, 0.3);
 }
 
 #mc-logo {
@@ -225,7 +230,7 @@ a:hover {
 
 input[type="email"] {
 	background-color: #ffffff;
-	border: 1px solid rgba(51, 102, 255, .8);
+	border: 1px solid rgba(255, 102, 0, .8);
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -240,7 +245,6 @@ input[type="email"] {
 	margin: 0px 15px 10px 0;
 	font-size: 25px;
 	line-height: 30px;
-	color: rgba(51, 102, 255, 1);
 	vertical-align: middle;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -249,7 +253,7 @@ input[type="email"] {
 }
 
 input[type="email"]:focus {
-	border-color: rgba(51, 102, 255, 1);
+	border-color: rgba(255, 102, 0, 1);
 	outline: 0;
 	outline: thin dotted \9;
 	/* IE6-9 */
@@ -275,18 +279,8 @@ select:focus:invalid:focus {
           box-shadow: 0 0 0px none;
 }
 
-
 input[type="email"]::-webkit-input-placeholder { /* WebKit browsers */
-    color: rgba(51, 153, 255, .8);
-}
-input[type="email"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: rgba(51, 153, 255, 1);
-}
-input[type="email"]::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: rgba(51, 153, 255, 1);
-}
-input[type="email"]:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: rgba(51, 153, 255, 1);
+    color: rgba(255, 102, 0, .8);
 }
 
 input[type="submit"].btn {
@@ -318,8 +312,6 @@ input[type="submit"].btn.btn-mini {
 input[type="submit"] {
 	cursor: pointer;
 	border: none;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(51, 102, 255, 1);
 	padding: 2px 0 0 0;
 	margin: 0 15px 10px 0;
 	font-size: 25px;
@@ -354,25 +346,23 @@ input[type="submit"] {
 	border-image-width: initial;
 	border-image-outset: initial;
 	border-image-repeat: initial;
-	background-color: rgba(51, 153, 255, 1);
 	box-sizing: border-box;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 }
 
-
-
+input[type="submit"],
 input[type="submit"]:link {
-	background-color: rgba(51, 153, 255, 1);
+	background-color: rgba(255, 153, 0, 1);
 }
 
 input[type="submit"]:active {
-	background-color: rgba(51, 102, 255, 1);
+	background-color: rgba(255, 102, 0, 1);
 }
 
 input[type="submit"]:focus {
-	outline: rgba(51, 102, 255, .5) auto 5px;
+	outline: rgba(255, 102, 0, .5) auto 5px;
 }
 
 .email-button {

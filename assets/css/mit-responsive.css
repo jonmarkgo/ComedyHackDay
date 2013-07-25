@@ -33,7 +33,7 @@
 }
 
 @media (max-width: 767px) {
-	.yellow-break {
+	.linebreak {
 		height: 5px;
 		margin: 15px 0 0 0;
 	}
