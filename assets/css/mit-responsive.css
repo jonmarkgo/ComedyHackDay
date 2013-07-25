@@ -69,4 +69,9 @@
 	.videoWrapper iframe {
 		left: -8%;
 	}
+
+	h2 {
+		font-size: 25px;
+		line-height: 25px;
+	}
 }
