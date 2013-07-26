@@ -170,6 +170,10 @@ a:active,
 	color: rgba(51, 153, 255, 1);
 }
 
+a:hover {
+	color: rgba(51, 102, 255, 1);
+}
+
 /* This was causing errors on the above style */
 input[type="email"]:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
 input[type="email"]::-moz-placeholder, /* Mozilla Firefox 19+ */
