@@ -9,7 +9,6 @@
 
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="//use.typekit.net/dvr7odz.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -43,15 +42,15 @@
     <div class="chd-container">
 
       <div class="jumbotron">
-        <img src="assets/img/Cultivated_Wit2.png" class="logo" alt="Cultivated Wit Logo">
-        <img src="assets/img/CHD_logo2.png" class="logo chd-logo" alt="Comedy Hack Day Logo">
+        <img src="assets/img/Cultivated_Wit.png" class="logo" alt="Cultivated Wit Logo">
+        <img src="assets/img/CHD_logo.png" class="logo chd-logo" alt="Comedy Hack Day Logo">
       </div>
 
       <div class="linebreak"></div>
 
       <div class="row">
             <h3 id="sponsored">Sponsored by</h2>
-            <img src="assets/img/MC_logo2.png" id="mc-logo" alt="MailChimp Logo">
+            <img src="assets/img/MC_logo.png" id="mc-logo" alt="MailChimp Logo">
       </div>
 
       <div class="linebreak"></div>
@@ -91,7 +90,7 @@
 
         <div class="videoWrapper">
             <!-- Copy & Pasted from YouTube -->
-            <iframe src="http://player.vimeo.com/video/64924406?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6600" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe src="http://player.vimeo.com/video/64924406?title=0&amp;byline=0&amp;portrait=0&amp;color=3366ff" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       </div>
 
@@ -148,7 +147,7 @@
       <div class="triangle triangle-bottom triangle-left1"></div>
       <div class="triangle triangle-bottom triangle-right1"></div>
       <div class="triangle triangle-bottom triangle-bottom triangle-left2"></div>
-      <div class="triangle triangle-bottom triangle-bottom triangle-right2"></div>
+      <div class="triangle triangle-bottom triangle-bottom triangle-right2" id="testing"></div>
     </div>
 
 
@@ -178,6 +177,18 @@
         $(".triangle-right2").css({"border-left": windowWidthR/1.3 + 'px solid transparent'} );
       });
     </script>
+    <script type="text/javascript">
+      var count = 0;
+      var windowWidthR = $(window).width();
+      $('#nothing-button').click(function () {
+        count += 1;
+        if (count == 100) {
+          $('#test').css("background-color", "red");
+          $('#testing').css({"border-bottom": windowWidthR/1.7 + 'px solid rgba(1, 1, 1, .3)'} );
+        }
+      });
+    </script>
+ 
 
   </body>
 </html>
