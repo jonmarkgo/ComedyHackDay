@@ -87,9 +87,6 @@ a:hover {
 	margin: 0 auto;
 	max-width: 700px;
 }
-.container-narrow > hr {
-	margin: 30px 0;
-}
 
 .jumbotron {
 	margin: 60px 0 40px 0;
@@ -297,22 +294,6 @@ input[type="submit"].btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-
-input[type="submit"].btn.btn-large {
-  *padding-top: 7px;
-  *padding-bottom: 7px;
-}
-
-input[type="submit"].btn.btn-small {
-  *padding-top: 3px;
-  *padding-bottom: 3px;
-}
-
-input[type="submit"].btn.btn-mini {
-  *padding-top: 1px;
-  *padding-bottom: 1px;
-}
-
 
 input[type="submit"] {
 	cursor: pointer;
