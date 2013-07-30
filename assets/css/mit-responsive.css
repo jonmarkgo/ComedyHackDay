@@ -138,11 +138,19 @@
 
 	.group {
 	margin: 0 0 0 50px;
-	width: 270px;
+	width: 150px;
 	}
 
 	.li-tall {
-		margin-bottom: 10px;
+		margin-bottom: 40px;
+	}
+
+	.li-tallish {
+		margin-bottom: 30px;
+	}
+
+	.ul-fix {
+		margin-left: -40px;
 	}
 
 }
