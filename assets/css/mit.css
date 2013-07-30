@@ -35,15 +35,24 @@
 }
 
 
+body,
+p,
+input[type="email"],
+input[type="submit"],
+input[type="text"] {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin: 0 0 0 0;
+}
 
 body,
 p,
 input[type="email"],
-input[type="submit"] {
-	padding-top: 20px;
-	padding-bottom: 40px;
+input[type="submit"],
+input[type="text"],
+.mc-field-group,
+label {
 	font-family: 'adelle', 'Josefin Slab Regular', Times, serif;
-	margin: 5px 0 5px 0;
 	font-weight: 300;
 }
 
@@ -51,7 +60,7 @@ h2,
 h3,
 h4 {
 	font-family: 'Quicksand Book', 'Quicksand Light', Helvetica, Arial, sans-serif;
-	margin: 15px 0 0 0;
+	margin: 10px 0 0 0;
 }
 
 p {
@@ -71,6 +80,11 @@ h3 {
 
 h4 {
 	font-size: 35px;
+}
+
+label {
+	font-size: 25px;
+	line-height: 30px;
 }
 
 a,
@@ -151,7 +165,10 @@ a:hover {
 p,
 input[type="email"],
 input[type="submit"],
+input[type="text"],
 a:hover,
+.form-item,
+label,
 .dark {
 	color: rgba(51, 102, 255, 1);
 }
@@ -175,6 +192,12 @@ a:hover {
 input[type="email"]:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
 input[type="email"]::-moz-placeholder, /* Mozilla Firefox 19+ */
 input[type="email"]:-ms-input-placeholder /* Internet Explorer 10+ */ {
+	color: rgba(255, 153, 0, 1);
+} 
+
+input[type="text"]:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
+input[type="text"]::-moz-placeholder, /* Mozilla Firefox 19+ */
+input[type="text"]:-ms-input-placeholder /* Internet Explorer 10+ */ {
 	color: rgba(255, 153, 0, 1);
 } 
 
@@ -230,7 +253,8 @@ input[type="email"]:-ms-input-placeholder /* Internet Explorer 10+ */ {
 	width: 50%;
 }
 
-input[type="email"] {
+input[type="email"],
+input[type="text"] {
 	background-color: #ffffff;
 	border: 1px solid rgba(51, 102, 255, .8);
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -244,7 +268,7 @@ input[type="email"] {
 	display: inline-block;
 	height: 30px;
 	padding: 4px 6px 1px;
-	margin: 0px 15px 10px 0;
+	margin: 0px 15px 10px 15px;
 	font-size: 25px;
 	line-height: 30px;
 	vertical-align: middle;
@@ -252,9 +276,13 @@ input[type="email"] {
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 	-webkit-appearance: none;
+
+	width: 50%;
+	float: none;
 }
 
-input[type="email"]:focus {
+input[type="email"]:focus,
+input[type="text"]:focus {
 	border-color: rgba(51, 102, 255, 1);
 	outline: 0;
 	outline: thin dotted \9;
@@ -281,7 +309,8 @@ select:focus:invalid:focus {
           box-shadow: 0 0 0px none;
 }
 
-input[type="email"]::-webkit-input-placeholder { /* WebKit browsers */
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder { /* WebKit browsers */
     color: rgba(51, 102, 255, .8);
 }
 
@@ -320,12 +349,10 @@ input[type="submit"] {
 	border-image-repeat: initial;
 	-webkit-rtl-ordering: logical;
 	-webkit-user-select: text;
-	cursor: auto;
 	-webkit-appearance: none;
 	white-space: pre;
 	-webkit-align-items: flex-start;
 	text-align: center;
-	cursor: default;
 	color: rgba(255, 255, 255, 1);
 	border-image-source: initial;
 	border-image-slice: initial;
@@ -338,9 +365,23 @@ input[type="submit"] {
 	border-radius: 0px;
 }
 
+input[type="checkbox"] {
+	cursor: pointer;
+	border: 0;
+	padding: 0 0 0 0;
+	margin: 0 10px 15px 0;
+	background-color: red;
+	display: inline-block;
+	-webkit-appearance: checkbox;
+}
+
 input[type="submit"],
 input[type="submit"]:link {
 	background-color: rgba(51, 153, 255, 1);
+}
+
+input[type="submit"]:hover {
+	background-color: rgba(51, 102, 255, .8);
 }
 
 input[type="submit"]:active {
@@ -373,4 +414,97 @@ input[type="submit"]:focus {
 
 .email-input-bottom {
 	margin-top: 10px !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.mc-field-group {
+	margin: 20px 5% 0 5%;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+/**
+ * Checkbox Five
+ */
+.checkboxFive {
+	width: 25px;
+	margin: 0 0 0 0;
+	position: relative;
+}
+
+/**
+ * Create the box for the checkbox
+ */
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+  	left: 0;
+	background: transparent;
+	border: 1px solid rgba(51, 102, 255, .8);
+}
+
+
+/**
+ * Display the tick inside the checkbox
+ */
+.checkboxFive label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid rgba(51, 102, 255, 1);
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.checkboxFive label:hover::after {
+	opacity: 0.5;
+}
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+.group {
+	margin: 0 0 0 50px;
+	width: 660px;
+}
+
+li {
+	height: 50px;
+}
+
+.text-input {
+	text-align: right;
+	margin: 20px 20% 0 20%;
+}
+
+.single {
+	height: 30px;
+}
+
+.default-cursor {
+	cursor: default;
 }
