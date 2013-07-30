@@ -102,7 +102,13 @@
 		height: 20px;
 		font-size: 15px;
 		line-height: 25px;
-		margin: 0px 15px 10px 0;
+	}
+
+	input[type="text"] {
+		height: 20px;
+		font-size: 15px;
+		line-height: 25px;
+		margin: 0px 15px 10px 5%;
 	}
 
 	input[type="submit"] {
@@ -110,7 +116,8 @@
 		line-height: 25px;
 		padding: 2px 0 0 0;
 		margin: 0 0 10px 0;
-		height: 27px;
+		height: 30px;
+		width: 40%;
 	}
 
 	.email-button {
@@ -119,16 +126,23 @@
 	}
 
 	#nothing-button {
-	margin:	20px 0 0 0;
-	width: 50%;
+	margin:	0 0 0 0;
+	width: 40%;
 	max-width: 200px;
-	height: 40px;
+	height: 30px;
 	}
 
+	.text-input {
+		margin: 20px 5% 0 5%;
+	}
 
+	.group {
+	margin: 0 0 0 50px;
+	width: 270px;
+	}
 
-
-
-
+	.li-tall {
+		margin-bottom: 10px;
+	}
 
 }
