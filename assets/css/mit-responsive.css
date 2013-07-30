@@ -63,7 +63,6 @@
 		line-height: 25px;
 	}
 
-
 }
 
 @media (max-width: 480px) {
@@ -138,7 +137,7 @@
 
 	.group {
 	margin: 0 0 0 50px;
-	width: 150px;
+	width: 200px;
 	}
 
 	.li-tall {
@@ -154,3 +153,6 @@
 	}
 
 }
+
+
+
