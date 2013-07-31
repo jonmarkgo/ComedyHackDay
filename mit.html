@@ -240,6 +240,37 @@
       var windowWidthR = $(window).width();
       /* set the color code variable so when you change the background, the colors remain */
       var colorCode = "255, 255, 0, 0.3";
+      $('#nothing-button').bind( "touchstart", function () {
+        count += 1;
+        if (count == 2) {
+          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
+          $('#testing').css({"animation-direction": 'alternate'} );
+          var elem = document.getElementById("nothing-button");
+            elem.value = "sdfdsfsdf";
+          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+        }
+        else if (count == 10) {
+          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
+          $('#testing').css({"animation-direction": 'alternate'} );
+          var elem = document.getElementById("nothing-button");
+            elem.value = "Cool it";
+          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+        }
+        else if (count == 20) {
+          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
+          $('#testing').css({"animation-direction": 'alternate'} );
+          var elem = document.getElementById("nothing-button");
+            elem.value = "Really?";
+          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+        }
+        else if (count == 30) {
+          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
+          $('#testing').css({"animation-direction": 'alternate'} );
+          var elem = document.getElementById("nothing-button");
+            elem.value = "You asked for it";
+          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+        }
+      });
       $('#nothing-button').click(function () {
         count += 1;
         if (count == 2) {
