@@ -37,10 +37,10 @@
 
   <body ontouchstart="">
     <div id="top-triangles">
-      <div class="triangle triangle-top triangle-left1"></div>
-      <div class="triangle triangle-top triangle-right1"></div>
-      <div class="triangle triangle-top triangle-top2 triangle-left2"></div>
-      <div class="triangle triangle-top triangle-top2 triangle-right2"></div>
+      <div class="triangle triangle-top triangle-left1" id="top-left-1"></div>
+      <div class="triangle triangle-top triangle-right1" id="top-right-1"></div>
+      <div class="triangle triangle-top triangle-top2 triangle-left2" id="top-left-2"></div>
+      <div class="triangle triangle-top triangle-top2 triangle-right2" id="top-right-2"></div>
     </div>
 
     <!-- container -->
@@ -197,15 +197,14 @@
           <input type="submit" value="Yup, nothing." id="nothing-button" class="button email-button">
         </center>
       </div>
-
     </div> 
     <!-- /container -->
 
     <div id="bottom-triangles">
-      <div class="triangle triangle-bottom triangle-left1"></div>
-      <div class="triangle triangle-bottom triangle-right1"></div>
-      <div class="triangle triangle-bottom triangle-bottom triangle-left2"></div>
-      <div class="triangle triangle-bottom triangle-bottom triangle-right2" id="testing"></div>
+      <div class="triangle triangle-bottom triangle-left1" id="bottom-left-1"></div>
+      <div class="triangle triangle-bottom triangle-right1" id="bottom-right-1"></div>
+      <div class="triangle triangle-bottom triangle-bottom triangle-left2" id="bottom-left-2"></div>
+      <div class="triangle triangle-bottom triangle-bottom triangle-right2" id="bottom-right-2"></div>
     </div>
 
 
@@ -240,68 +239,96 @@
       var windowWidthR = $(window).width();
       /* set the color code variable so when you change the background, the colors remain */
       var colorCode = "255, 255, 0, 0.3";
+      var partyMode = false;
       $('#nothing-button').bind( "touchstart", function () {
         count += 1;
-        if (count == 2) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
+        if (count == 4) {
+          $('#bottom-right-2').css({"animation": 'test ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"-webkit-animation": 'test ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 250 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "sdfdsfsdf";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          elem.value = "Fine, here you go";
         }
         else if (count == 10) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 300 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "Cool it";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          elem.value = "That wasn't enough?";
         }
         else if (count == 20) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 200 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "Really?";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          elem.value = "Are you sure?";
         }
         else if (count == 30) {
           $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
           $('#testing').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 225 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "You asked for it";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          elem.value = "You asked for it";
         }
       });
       $('#nothing-button').click(function () {
         count += 1;
-        if (count == 2) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
+        if (count == 4) {
+          $('#bottom-right-2').css({"animation": 'test ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"-webkit-animation": 'test ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 250 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "Fine, here you go";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          elem.value = "Fine, here you go";
+          hereToPARTY();
         }
         else if (count == 10) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 300 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "Cool it";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          elem.value = "That wasn't enough?";
         }
         else if (count == 20) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 200 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "Really?";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          elem.value = "Are you sure?";
         }
-        else if (count == 30) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
+        else if (count == 29) {
+          $('#nothing-button').css({"max-width": 200 + 'px'} );
           var elem = document.getElementById("nothing-button");
-            elem.value = "You asked for it";
-          /*$('#testing').css({"animation-fill-mode": 'forwards'} );*/
+          
         }
       });
+      function hereToPARTY()
+      {
+        var r=confirm("You can still turn back. Are you sure you want to do this?");
+        if (r==true)
+          {
+          partyMode = true;
+          count = 30;
+          $('#bottom-left-1, #bottom-right-1').css({"animation": 'bottom1 ' + .3 + 's infinite'} );
+          $('#bottom-left-1, #bottom-right-1').css({"-webkit-animation": 'bottom1 ' + .3 + 's infinite'} );
+          $('#bottom-left-1, #bottom-right-1').css({"animation-direction": 'alternate'} );
+          $('#bottom-left-2, #bottom-right-2').css({"animation": 'bottom2 ' + .1 + 's infinite'} );
+          $('#bottom-left-2, #bottom-right-2').css({"-webkit-animation": 'bottom2 ' + .1 + 's infinite'} );
+          $('#bottom-left-2, #bottom-right-2').css({"animation-direction": 'alternate'} );
+
+          $('#top-left-1, #top-right-1').css({"animation": 'top1 ' + .1 + 's infinite'} );
+          $('#top-left-1, #top-right-1').css({"-webkit-animation": 'top1 ' + .1 + 's infinite'} );
+          $('#top-left-1, #top-right-1').css({"animation-direction": 'alternate'} );
+          $('#top-left-2, #top-right-2').css({"animation": 'top2 ' + .3 + 's infinite'} );
+          $('#top-left-2, #top-right-2').css({"-webkit-animation": 'top2 ' + .3 + 's infinite'} );
+          $('#top-left-2, #top-right-2').css({"animation-direction": 'alternate'} );
+
+          $('body').css({"-webkit-animation": 'background ' + .2 + 's infinite'} );
+          $('body').css({"animation-direction": 'alternate'} );
+          $('#nothing-button').css({"max-width": 225 + 'px'} );
+          var elem = document.getElementById("nothing-button");
+          elem.value = "YOU DID THIS";
+          }
+        else
+          {
+          var elem = document.getElementById("nothing-button");
+          elem.value = "Phew, that was close.";
+          count = 30;
+          }
+      }
     </script>
  
 
