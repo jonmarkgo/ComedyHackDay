@@ -271,13 +271,12 @@
       $('#nothing-button').click(function () {
         count += 1;
         if (count == 4) {
-          $('#bottom-right-2').css({"animation": 'test ' + 1 + 's infinite'} );
-          $('#bottom-right-2').css({"-webkit-animation": 'test ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"animation": 'bottom2 ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"-webkit-animation": 'bottom2 ' + 1 + 's infinite'} );
           $('#bottom-right-2').css({"animation-direction": 'alternate'} );
           $('#nothing-button').css({"max-width": 250 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Fine, here you go";
-          hereToPARTY();
         }
         else if (count == 10) {
           $('#nothing-button').css({"max-width": 300 + 'px'} );
@@ -292,12 +291,12 @@
         else if (count == 29) {
           $('#nothing-button').css({"max-width": 200 + 'px'} );
           var elem = document.getElementById("nothing-button");
-          
+          hereToPARTY();
         }
       });
       function hereToPARTY()
       {
-        var r=confirm("You can still turn back. Are you sure you want to do this?");
+        var r=confirm("What's about to happen is not good. You can still turn back. Are you sure you want to do this?");
         if (r==true)
           {
           partyMode = true;
@@ -318,6 +317,11 @@
 
           $('body').css({"-webkit-animation": 'background ' + .2 + 's infinite'} );
           $('body').css({"animation-direction": 'alternate'} );
+
+          $('.linebreak').css({"position": 'relative'} );
+          $('.linebreak').css({"-webkit-animation": 'linebreak ' + .1 + 's infinite'} );
+          $('.linebreak').css({"animation-direction": 'alternate'} );
+
           $('#nothing-button').css({"max-width": 225 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "YOU DID THIS";
