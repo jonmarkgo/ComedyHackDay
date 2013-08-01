@@ -328,7 +328,7 @@ input[type="submit"] {
 	cursor: pointer;
 	border: none;
 	padding: 2px 0 0 0;
-	margin: -10px 15px 10px 0;
+	margin: 0 15px 10px 0;
 	font-size: 25px;
 	line-height: 40px;
 	/* add */
@@ -421,7 +421,7 @@ ul {
 }
 
 .mc-field-group {
-	margin: 20px 5% 0 5%;
+	margin: 10px 5% 0 5%;
 }
 
 input[type=checkbox] {
@@ -507,6 +507,10 @@ li {
 
 .default-cursor {
 	cursor: default;
+}
+
+#mc_embed_signup {
+	margin-top: 25px;
 }
 
 @keyframes bottom1

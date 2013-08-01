@@ -78,17 +78,6 @@
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
             <div class="mc-field-group input-group">
-              <label class="light default-cursor">Do you attend, advise, or work at the Media Lab?</label>
-              <ul class="ul-fix">
-                <li class="single">
-                  <div class="checkboxFive">
-                    <input type="checkbox" value="Yup" name="MMERGE3" id="mce-MMERGE3-0">
-                    <label for="mce-MMERGE3-0" class="form-item"><div class="group">Yup</div></label>
-                  </div>
-                </li>
-              </ul>
-            </div> 
-            <div class="mc-field-group input-group">
               <label class="light default-cursor">I am a</label>
               <ul class="ul-fix">
                 <li>
@@ -141,6 +130,17 @@
                 </li>
               </ul>
             </div>
+            <div class="mc-field-group input-group">
+              <label class="light default-cursor">Do you attend, advise, or work at the Media Lab?</label>
+              <ul class="ul-fix">
+                <li class="single">
+                  <div class="checkboxFive">
+                    <input type="checkbox" value="Yup" name="MMERGE3" id="mce-MMERGE3-0">
+                    <label for="mce-MMERGE3-0" class="form-item"><div class="group">Yup</div></label>
+                  </div>
+                </li>
+              </ul>
+            </div> 
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
               <div class="response" id="mce-success-response" style="display:none"></div>
@@ -170,28 +170,28 @@
       <div class="linebreak"></div>
 
       <div class="row">
-        <h2>This one is at the Media Lab, will that change things?</h2>
+        <h2>Will it be different at the Media Lab?</h2>
         <p>Yes. We’re holding this event in partnership with the MIT Media Lab so many of the teams will consist of Media Lab students, faculty, and advisors. However, we’re opening up a few slots for the public so be sure to fill out the form and we'll keep you updated.</p>
       </div>
 
       <div class="linebreak"></div>
 
       <div class="row">
-        <h2>Now I get it.</h2>
+        <h2>Sounds cool.</h2>
         <p>Sweet. If you want more info, fill out the form that you pretty much blew right past.</p>
       </div>
 
       <div class="linebreak"></div>
 
       <div class="row">
-        <h2>I get this so much that my company might like to sponsor the event.</h2>
+        <h2>Sounds so cool that I want to sponsor it.</h2>
         <p>Why thank you! You’re the best. We always knew you would get it. You can email <a href="mailto:Craig@CultivatedWit.com">Craig@CultivatedWit.com</a> for more info. Remember, you’re great. Have a wonderful day.</p>
       </div>
 
       <div class="linebreak"></div>
 
       <div class="row">
-        <h2>None of the excellent options above apply to me.</h2>
+        <h2>None of the above options apply to me.</h2>
         <p>Yet you’re still here. Interesting... You must want to take some kind of action. Here, click this button that does nothing.</p>
         <center>
           <input type="submit" value="Yup, nothing." id="nothing-button" class="button email-button">
@@ -246,17 +246,14 @@
           $('#bottom-right-2').css({"animation": 'bottom2 ' + 1 + 's infinite'} );
           $('#bottom-right-2').css({"-webkit-animation": 'bottom2 ' + 1 + 's infinite'} );
           $('#bottom-right-2').css({"animation-direction": 'alternate'} );
-          $('#nothing-button').css({"max-width": 300 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Fine, here you go";
         }
         else if (count == 10) {
-          $('#nothing-button').css({"max-width": 350 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "That wasn't enough?";
         }
         else if (count == 20) {
-          $('#nothing-button').css({"max-width": 200 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Are you sure?";
         }
@@ -265,11 +262,9 @@
         }
         else if (count == 30) {
           if (r==false) {
-            $('#nothing-button').css({"max-width": 375 + 'px'} );
             var elem = document.getElementById("nothing-button");
           }
           else if (r==true) {
-            $('#nothing-button').css({"max-width": 325 + 'px'} );
             var elem = document.getElementById("nothing-button");
           }
         }
@@ -280,17 +275,16 @@
           $('#bottom-right-2').css({"animation": 'bottom2 ' + 1 + 's infinite'} );
           $('#bottom-right-2').css({"-webkit-animation": 'bottom2 ' + 1 + 's infinite'} );
           $('#bottom-right-2').css({"animation-direction": 'alternate'} );
-          $('#nothing-button').css({"max-width": 250 + 'px'} );
+          $('#nothing-button').css({"max-width": 275 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Fine, here you go";
         }
         else if (count == 10) {
-          $('#nothing-button').css({"max-width": 300 + 'px'} );
+          $('#nothing-button').css({"max-width": 275 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "That wasn't enough?";
         }
         else if (count == 20) {
-          $('#nothing-button').css({"max-width": 200 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Are you sure?";
         }
@@ -326,13 +320,11 @@
           $('.linebreak').css({"-webkit-animation": 'linebreak ' + .1 + 's infinite'} );
           $('.linebreak').css({"animation-direction": 'alternate'} );
 
-          $('#nothing-button').css({"max-width": 225 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "YOU DID THIS";
           }
         else
           {
-          $('#nothing-button').css({"max-width": 275 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Phew, that was close.";
           count = 30;
