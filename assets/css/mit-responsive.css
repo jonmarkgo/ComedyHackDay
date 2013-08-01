@@ -75,7 +75,7 @@
 	}
 
 	.videoWrapper iframe {
-		left: 0;
+		left: -20px;
 	}
 
 	h2 {
