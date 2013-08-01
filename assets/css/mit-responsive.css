@@ -67,10 +67,6 @@
 		width: 300px;
 	}
 
-	.lockdown {
-		bottom: 0px;
-	}
-
 }
 
 @media (max-width: 480px) {
