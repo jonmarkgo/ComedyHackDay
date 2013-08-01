@@ -243,15 +243,15 @@
       $('#nothing-button').bind( "touchstart", function () {
         count += 1;
         if (count == 4) {
-          $('#bottom-right-2').css({"animation": 'test ' + 1 + 's infinite'} );
-          $('#bottom-right-2').css({"-webkit-animation": 'test ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"animation": 'bottom2 ' + 1 + 's infinite'} );
+          $('#bottom-right-2').css({"-webkit-animation": 'bottom2 ' + 1 + 's infinite'} );
           $('#bottom-right-2').css({"animation-direction": 'alternate'} );
-          $('#nothing-button').css({"max-width": 250 + 'px'} );
+          $('#nothing-button').css({"max-width": 300 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Fine, here you go";
         }
         else if (count == 10) {
-          $('#nothing-button').css({"max-width": 300 + 'px'} );
+          $('#nothing-button').css({"max-width": 350 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "That wasn't enough?";
         }
@@ -260,12 +260,18 @@
           var elem = document.getElementById("nothing-button");
           elem.value = "Are you sure?";
         }
+        else if (count == 29) {
+          hereToPARTY();
+        }
         else if (count == 30) {
-          $('#testing').css({"-webkit-animation": 'myfirst ' + 1 + 's infinite'} );
-          $('#testing').css({"animation-direction": 'alternate'} );
-          $('#nothing-button').css({"max-width": 225 + 'px'} );
-          var elem = document.getElementById("nothing-button");
-          elem.value = "You asked for it";
+          if (r==false) {
+            $('#nothing-button').css({"max-width": 375 + 'px'} );
+            var elem = document.getElementById("nothing-button");
+          }
+          else if (r==true) {
+            $('#nothing-button').css({"max-width": 325 + 'px'} );
+            var elem = document.getElementById("nothing-button");
+          }
         }
       });
       $('#nothing-button').click(function () {
@@ -289,8 +295,6 @@
           elem.value = "Are you sure?";
         }
         else if (count == 29) {
-          $('#nothing-button').css({"max-width": 200 + 'px'} );
-          var elem = document.getElementById("nothing-button");
           hereToPARTY();
         }
       });
@@ -328,6 +332,7 @@
           }
         else
           {
+          $('#nothing-button').css({"max-width": 275 + 'px'} );
           var elem = document.getElementById("nothing-button");
           elem.value = "Phew, that was close.";
           count = 30;
