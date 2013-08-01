@@ -489,7 +489,7 @@ input[type=checkbox] {
 
 .group {
 	margin: 0 0 0 50px;
-	width: 660px;
+	width: 570px;
 }
 
 li {
@@ -564,19 +564,19 @@ to {border-top-color:rgba(51, 153, 255, .8)}
 @keyframes linebreak
 {
 0%   {background:red; right:0px; left:0px;}
-25%  {background:yellow; right:-500px;}
-50%  {background:blue; right:500px;}
-75%  {background:green; right:-500px;}
-100% {background:red; right:500px;}
+25%  {background:yellow; right:-200px;}
+50%  {background:blue; right:200px;}
+75%  {background:green; right:-200px;}
+100% {background:red; right:200px;}
 }
 
 @-webkit-keyframes linebreak /* Safari and Chrome */
 {
 0%   {background:red; right:0px; left:0px;}
-25%  {background:yellow; right:-500px;}
-50%  {background:blue; right:500px;}
-75%  {background:green; right:-500px;}
-100% {background:red; right:500px;}
+25%  {background:yellow; right:-200px;}
+50%  {background:blue; right:200px;}
+75%  {background:green; right:-200px;}
+100% {background:red; right:200px;}
 }
 
 @keyframes background
