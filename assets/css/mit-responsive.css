@@ -75,7 +75,7 @@
 	}
 
 	.videoWrapper iframe {
-		left: -20px;
+		left: 0;
 	}
 
 	h2 {
@@ -154,5 +154,8 @@
 
 }
 
-
-
+@media (max-width: 320px) {
+	.videoWrapper iframe {
+		left: -20px;
+	}
+}
