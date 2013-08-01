@@ -116,7 +116,7 @@
 		padding: 2px 0 0 0;
 		margin: 0 0 10px 0;
 		height: 30px;
-		width: 60%;
+		width: 40%;
 	}
 
 	.email-button {
@@ -126,7 +126,7 @@
 
 	#nothing-button {
 	margin:	0 0 0 0;
-	width: 40%;
+	width: 60%;
 	max-width: 200px;
 	height: 30px;
 	}
