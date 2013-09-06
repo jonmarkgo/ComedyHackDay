@@ -513,6 +513,14 @@ li {
 	margin-top: 25px;
 }
 
+.squarespace_shim {
+	margin-top:15px;
+}
+
+.sponsored_shim {
+	margin-top: 25px;
+}
+
 @keyframes bottom1
 {
 from {border-bottom-color:rgba(255, 255, 0, .3);}

@@ -152,6 +152,14 @@
 		margin-left: -40px;
 	}
 
+	.squarespace_shim {
+		margin-top: 10px;
+	}
+
+	.sponsored_shim {
+		margin-top: 15px;
+	}
+
 }
 
 @media (max-width: 320px) {
