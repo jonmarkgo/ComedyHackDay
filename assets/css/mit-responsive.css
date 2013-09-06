@@ -66,6 +66,9 @@
 	.group{
 		width: 300px;
 	}
+	.squarespace_shim {
+		margin-bottom: -5px;
+	}
 
 }
 

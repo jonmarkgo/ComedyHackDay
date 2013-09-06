@@ -515,6 +515,7 @@ li {
 
 .squarespace_shim {
 	margin-top:15px;
+	margin-bottom: -15px;
 }
 
 .sponsored_shim {
