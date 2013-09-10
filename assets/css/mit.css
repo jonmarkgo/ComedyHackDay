@@ -522,6 +522,22 @@ li {
 	margin-top: 25px;
 }
 
+.schedule {
+	padding-bottom: 20px;
+}
+
+.hack {
+	width: 60%;
+	height: auto;
+	margin-top: 30px;
+}
+
+.api {
+	width: 40%;
+	height: auto;
+	margin: 20px 5% 0 0;
+}
+
 @keyframes bottom1
 {
 from {border-bottom-color:rgba(255, 255, 0, .3);}
