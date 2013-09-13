@@ -538,6 +538,11 @@ li {
 	margin: 20px 5% 0 0;
 }
 
+.mashery {
+	width: 30%;
+	margin-top: 30px;
+}
+
 @keyframes bottom1
 {
 from {border-bottom-color:rgba(255, 255, 0, .3);}
