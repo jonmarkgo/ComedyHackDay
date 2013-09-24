@@ -547,6 +547,30 @@ li {
 	width: 50%;
 }
 
+a,
+a.post:link,
+a.post:visited,
+a.post:active {
+	color: rgba(255, 153, 0, 1);
+}
+
+a.post:hover {
+	color: rgba(229, 130, 0, 1);
+}
+
+#mit {
+	background-color: rgba(102, 102, 102, 0.3);
+	margin: 25px 0 10px 0;
+}
+
+#what {
+	color: rgba(76, 76, 76, 1);
+}
+
+.about {
+	color: rgba(76, 76, 76, 1);
+}
+
 @keyframes bottom1
 {
 from {border-bottom-color:rgba(255, 255, 0, .3);}
