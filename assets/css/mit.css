@@ -571,6 +571,22 @@ a.post:hover {
 	color: rgba(76, 76, 76, 1);
 }
 
+.after_form {
+	color:rgb(76, 76, 76) !important;
+}
+
+.after_border {
+	border-color: rgb(76, 76, 76) !important;
+}
+
+.after_bg {
+	background-color: rgba(102, 102, 102, 0.3) !important;
+}
+
+.after_bg:focus {
+	outline: rgba(216, 216, 216, .5) auto 5px !important;
+}
+
 @keyframes bottom1
 {
 from {border-bottom-color:rgba(255, 255, 0, .3);}
